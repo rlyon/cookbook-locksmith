@@ -1,6 +1,6 @@
 Description
 ===========
-Configures 
+Configures user passwords and keys.
 
 Requirements
 ============
