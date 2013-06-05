@@ -29,8 +29,8 @@ node['locksmith']['users'].each do |username|
     user_keys = data_bag_item('locksmith', username)['keys']
     password_hash = data_bag_item('locksmith', username)['password'] || false
 
-    user "#{username}" do
-      password "#{password_hash}"
+    user username do
+      password password_hash
     end
 
     directory "#{user_info['dir']}/.ssh" do
