@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe "yum::epel"
+include_recipe "yum-epel"
 
 package "ruby-shadow" do
   action :install
